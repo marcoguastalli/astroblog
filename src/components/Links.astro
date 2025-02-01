@@ -1,0 +1,14 @@
+---
+interface Props {
+    link1url: string;
+    link1text: string;
+    link2url: string;
+    link2text: string;
+}
+
+const { link1url, link1text, link2url, link2text } = Astro.props;
+---
+<ul>
+    <li><a href={link1url}>{link1text}</a></li>
+    <li><a href={link2url}>{link2text}</a></li>
+</ul>
